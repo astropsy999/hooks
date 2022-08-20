@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 import React from "react";
 import CollapseWrapper from "../components/common/collapse";
 import CardWrapper from "../components/common/Card";
@@ -25,9 +26,8 @@ const MemoExample = () => {
                         React буде використовувати результат останнього
                         рендерингу, уникаючи повторного для візуалізації.
                         <br />
-                        Говоря просто, компонент высшего порядка — это функция,
-                        которая принимает компонент и возвращает новый
-                        компонент.
+                        Просто кажучи, компонент вищого порядку — це функція,
+                        яка приймає компонент і повертає новий компонент.
                     </p>
 
                     <figcaption>
@@ -36,29 +36,29 @@ const MemoExample = () => {
                 </BlockQuoteWrapper>
             </CollapseWrapper>
 
-            <CollapseWrapper title="Когда использовать">
-                <SmallTitle>Если компонент</SmallTitle>
+            <CollapseWrapper title="Коли використовувати">
+                <SmallTitle>Якщо компонент</SmallTitle>
                 <ul>
-                    <li>Часто ререндерится</li>
+                    <li>Часто ререндериться</li>
                     <li>
-                        Компоненту передаются одинаковые параметры при
-                        нескольких ререндерах
+                        Компоненту передаються однакові параметри при кількох
+                        рендерах
                     </li>
-                    <li> Не имеет собственного состояния</li>
+                    <li> Не має власного стану</li>
                 </ul>
             </CollapseWrapper>
             <CardWrapper>
-                <i className="bi bi-lightbulb"></i> Если функциональный
-                компонент обёрнут в <code>React.memo</code> и использует{" "}
-                <code>useState, useReducer или useContext</code>, он будет
-                повторно рендериться при изменении состояния или контекста.
+                <i className="bi bi-lightbulb"></i> Якщо функціональний
+                компонент обгорнут в <code>React.memo</code> та використвує{" "}
+                <code>useState, useReducer или useContext</code>, він повторно
+                рендеруватиметься при зміні стану або контексту.
             </CardWrapper>
             <CardWrapper>
-                <i className="bi bi-lightbulb"></i> Функциональный объект равен
-                только самому себе
+                <i className="bi bi-lightbulb"></i> Функціональний об'єкт
+                дорівнює лише самому собі
             </CardWrapper>
             <Divider />
-            <Subtitle>Examples</Subtitle>
+            <Subtitle>Приклади</Subtitle>
             <CardWrapper>
                 <SmallTitle>Memo with useCallback</SmallTitle>
                 <MemoWithUseCallbackExample />
@@ -67,8 +67,8 @@ const MemoExample = () => {
                 {" "}
                 <SmallTitle>Memo dependency function</SmallTitle>
                 <CardWrapper>
-                    <i className="bi bi-lightbulb"></i> Если функция для сверки
-                    не задана, то выполняется поверхностная сверка по{" "}
+                    <i className="bi bi-lightbulb"></i> Якщо функція для
+                    звіряння не задана, то виконується поверхнева звірка по{" "}
                     <Link
                         to={{
                             pathname:

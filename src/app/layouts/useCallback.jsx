@@ -15,10 +15,10 @@ const UseCallbackExample = () => {
             <Collapse title="Информация">
                 <BlockQuoteWrapper>
                     <p>
-                        Аргументы: callBack, [array of dependencies]
+                        Аргументи: callBack, [array of dependencies]
                         <br />
-                        Возвращает: Закэшированное значение выполненной функции,
-                        которое обновляется только при изменении зависимостей.
+                        Повертає: Закешоване значення виконаної функції, яке
+                        поновлюється тільки при зміні залежностей.
                     </p>
 
                     <figcaption>
@@ -33,7 +33,7 @@ const UseCallbackExample = () => {
                 <code>useMemo(() =&gt; fn, deps)</code>
             </CardWrapper>
             <Divider />
-            <Subtitle>Examples</Subtitle>
+            <Subtitle>Приклади</Subtitle>
             <UseCallBackExample />
         </>
     );

@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 import React from "react";
 import BlockQuoteWrapper from "../components/common/blockQuote";
 import CardWrapper from "../components/common/Card";
@@ -16,15 +17,14 @@ const ReactChildren = () => {
                 <figure>
                     <blockquote>
                         <p className="mt-3">
-                            <code> props.children </code>- Это объект,
-                            содержащий описание детей.
+                            <code> props.children </code>- Це об'єкт, який
+                            містить опис дітей.
                         </p>
                         <p>
-                            <code>children</code> - не настоящие дети, не
-                            компоненты, это описание содержания детей. Mы не
-                            можем изменять какие-либо параметры или
-                            редактировать какие-либо функции. Мы имеем доступ
-                            только к чтению.
+                            <code>children</code> - не справжні діти, не
+                            компоненти, це опис змісту дітей. Ми не можемо
+                            змінювати будь-які параметри або редагувати будь-які
+                            функції. Ми маємо доступ лише до читання.
                         </p>
                     </blockquote>
                 </figure>
@@ -34,18 +34,17 @@ const ReactChildren = () => {
                 <figure>
                     <blockquote>
                         <p className="mt-3">
-                            <code>React.Children</code> - это утилита,
-                            предоставляемая React, которая предоставляет функции
-                            для работы с непрозрачной структурой данных
-                            this.props.children.
+                            <code>React.Children</code> - це утиліта, що
+                            надається React, яка надає функції для роботи з
+                            непрозорою структурою даних this.props.children.
                         </p>
                     </blockquote>
                 </figure>
             </CollapseWrapper>
             <CardWrapper>
-                <i className="bi bi-lightbulb"></i>Если <code>children</code> —
-                это <code>Fragment</code>, он будет рассматриваться как целый
-                потомок, а элементы внутри не будут пройдены.
+                <i className="bi bi-lightbulb"></i>Якщо <code>children</code> —
+                це <code>Fragment</code>, він розглядатиметься як цілий нащадок,
+                а елементи всередині не будуть пройдені.
             </CardWrapper>
 
             <CollapseWrapper title="React.children Functions">
@@ -57,13 +56,13 @@ const ReactChildren = () => {
                                 function[(thisArg)])
                             </code>
                             <br />
-                            Вызывает функцию для каждого непосредственного
-                            потомка, содержащегося в children, передавая их по
-                            очереди в thisArg. Если children — это массив, он
-                            будет пройден, и функция будет вызвана для каждого
-                            потомка в массиве. Если children равен null или
-                            undefined, этот метод вернёт null или undefined, а
-                            не массив.
+                            Викликає функцію для кожного безпосереднього
+                            нащадка, що міститься в дитину, передаючи їх по
+                            черзі в thisArg. Якщо children це масив, він буде
+                            пройдений, і функція буде викликана для кожного
+                            нащадка в масиві. Якщо дитина дорівнює null або
+                            undefined, цей метод поверне null або undefined, а
+                            не масив.
                         </p>
                         <p></p>
                     </BlockQuoteWrapper>
@@ -73,9 +72,9 @@ const ReactChildren = () => {
                         <p className="mt-3">
                             <code>React.Children.count(children)</code>
                             <br />
-                            Возвращает общее количество компонентов в children,
-                            равное количеству вызовов callback, переданного в
-                            React.Children.map, которые будут совершены.
+                            Повертає загальну кількість компонентів у children,
+                            що дорівнює кількості викликів callback, переданого
+                            в React.Children.map, які будуть здійснені.
                         </p>
                     </BlockQuoteWrapper>
                 </CollapseWrapper>
@@ -84,23 +83,23 @@ const ReactChildren = () => {
                         <p className="mt-3">
                             <code>React.Children.toArray(children)</code>
                             <br />
-                            Возвращает непрозрачную структуру данных children в
-                            виде плоского массива с ключами, заданные каждому
-                            дочернему элементу. Полезно, если вы хотите
-                            манипулировать коллекциями потомков в ваших методах
-                            рендера, особенно если вы хотите отсортировать или
-                            извлечь часть this.props.children перед её передачей
-                            куда-либо.
+                            Повертає непрозору структуру даних дітей у вигляді
+                            плоского масиву з ключами, заданими кожному
+                            дочірньому елементу. Корисно, якщо ви хочете
+                            маніпулювати колекціями нащадків у ваших методах
+                            рендеру, особливо якщо ви хочете відсортувати або
+                            витягти частину this.props.children перед передачею
+                            кудись.
                         </p>
                     </BlockQuoteWrapper>
                 </CollapseWrapper>
             </CollapseWrapper>
             <Divider />
-            <Subtitle>Examples</Subtitle>
+            <Subtitle>Приклади</Subtitle>
 
             <ReactChildrenExample />
             <Divider />
-            <Subtitle>Упражнения</Subtitle>
+            <Subtitle>Вправи</Subtitle>
             <ChildrenExercise />
         </>
     );

@@ -11,18 +11,17 @@ const HOCLayout = () => {
     return (
         <>
             <Title>HOC</Title>
-            <Collapse title="Информация">
+            <Collapse title="Інформація">
                 <BlockQuoteWrapper>
                     <p>
-                        Компонент высшего порядка (Higher-Order Component, HOC)
-                        — это один из продвинутых способов для повторного
-                        использования логики. HOC не являются частью API React,
-                        но часто применяются из-за композиционной природы
-                        компонентов.
+                        Компонент вищого порядка (Higher-Order Component, HOC) -
+                        це один із просунутих способів для повторного
+                        використання логіки. HOC не є частиною API React, але
+                        часто застосовуються через композиційну природу
+                        компонентів.
                         <br />
-                        Говоря просто, компонент высшего порядка — это функция,
-                        которая принимает компонент и возвращает новый
-                        компонент.
+                        Просто кажучи, компонент вищого порядку — це функція,
+                        яка приймає компонент та повертає новий компонент.
                     </p>
 
                     <figcaption className="blockquote-footer">
@@ -36,10 +35,10 @@ const HOCLayout = () => {
                 EsLint rules
             </CardWrapper>
             <Divider />
-            <Subtitle>Examples</Subtitle>
+            <Subtitle>Приклади</Subtitle>
             <HOCExample />
             <Divider />
-            <Subtitle>Упражнения</Subtitle>
+            <Subtitle>Вправи</Subtitle>
             <HocExercise />
         </>
     );
