@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 import React from "react";
 import BlockQuote from "../components/common/blockQuote";
 import CollapseWrapper from "../components/common/collapse";
@@ -15,11 +16,11 @@ const UseRefExample = () => {
             <CollapseWrapper>
                 <BlockQuote>
                     <p>
-                        <code>useRef</code> возвращает изменяемый ref-объект,
-                        свойство <code>.current</code> которого инициализируется
-                        переданным аргументом <code>(initialValue)</code>.
-                        Возвращённый объект будет сохраняться в течение всего
-                        времени жизни компонента.
+                        <code>useRef</code> повертає змінний ref-об'єкт
+                        властивість <code>.current</code> якого ініціалізується
+                        переданим аргументом <code>(initialValue)</code>.
+                        Повернутий об'єкт зберігатиметься протягом усього часу
+                        життя компонента.
                     </p>
 
                     <figcaption className="blockquote-footer">
@@ -29,14 +30,14 @@ const UseRefExample = () => {
             </CollapseWrapper>
             <Divider />
             <div>
-                <Subtitle>Examples</Subtitle>
+                <Subtitle>Приклади</Subtitle>
                 <RenderCountExample />
                 <PrevStateExample />
                 <ProgrammableActionsExample />
             </div>
             <Divider />
             <div>
-                <Subtitle>Упражнения</Subtitle>
+                <Subtitle>Вправи</Subtitle>
                 <UseRefExercise />
             </div>
         </>

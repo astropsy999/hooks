@@ -35,7 +35,7 @@ const CollapseWrapper = ({ children, title, name }) => {
     );
 };
 CollapseWrapper.defaultProps = {
-    title: "Информация"
+    title: "Інформація"
 };
 CollapseWrapper.propTypes = {
     children: PropTypes.oneOfType([
