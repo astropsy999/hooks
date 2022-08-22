@@ -1,25 +1,40 @@
+/* eslint-disable react/prop-types */
 import React from "react";
 import CollapseWrapper from "../common/collapse";
+import Divider from "../common/divider";
+import SmallTitle from "../common/typografy/smallTitle";
 const ChildrenExercise = () => {
     return (
-        <CollapseWrapper title="Упражнение">
+        <CollapseWrapper title="Вправа">
             <p className="mt-3">
-                У вас есть компоненты Списка. Вам необходимо к каждому из них
-                добавить порядковый номер, относительно того, как они
-                располагаются на странице. Вы можете использовать как{" "}
-                <code>React.Children.map</code> так и{" "}
+                У вас є компоненти Списку. Вам необхідно до кожного з них додати
+                порядковий номер щодо того, як вони розміщуються на сторінці. Ви
+                можете використовувати як <code>React.Children.map</code> так і{" "}
                 <code>React.Children.toArray</code>
             </p>
-
-            <Component />
-            <Component />
-            <Component />
+            <Divider />
+            <SmallTitle>Рішення</SmallTitle>
+            <ComponentList>
+                <Component />
+                <Component />
+                <Component />
+            </ComponentList>
         </CollapseWrapper>
     );
 };
 
-const Component = () => {
-    return <div>Компонент списка</div>;
+const ComponentList = ({ children }) => {
+    const arrayOfChildren = React.Children.toArray(children);
+    return React.Children.map(arrayOfChildren, (child) =>
+        React.cloneElement(child, {
+            ...child.props,
+            num: +child.key.replace(".", "") + 1
+        })
+    );
+};
+
+const Component = ({ num }) => {
+    return <div>{num}. Компонент списка</div>;
 };
 
 export default ChildrenExercise;
